@@ -16,22 +16,35 @@
         AzerType est une applicaction en ligne qui vous apprend à taper plus
         vite au clavier😊
       </p>
-      <div class="card bg-secondary max-w-4xl mx-auto p-4">
+      <form class="card bg-secondary max-w-4xl mx-auto py-4 px-8">
         <p>
           Choisissez votre option et tapez la proposition qui s'affiche dans le
           champ en-dessous
         </p>
         <div class="flex gap-8 justify-center py-4">
           <div class="flex gap-2">
-            <input type="checkbox" name="word" id="word" />
+            <input type="radio" name="world" id="world" />
             <label for="word">Mots</label>
           </div>
           <div class="flex gap-2">
-            <input type="checkbox" name="paragraph" id="paragraph" />
-            <label for="paragraph">Phrases</label>
+            <input type="radio" name="world" id="world" />
+            <label for="word">Phrases</label>
           </div>
         </div>
-      </div>
+        <div class="pb-4 text-3xl font-semibold text-white textSave">text</div>
+        <div class="grid grid-cols-3 gap-2">
+          <textarea
+            class="input col-span-2 resize-none"
+            type="text"
+            placeholder="Saisisez ici"
+            id="userText"
+          ></textarea>
+          <button id="validationBtn" type="submit" class="btn btn-success">
+            Valider
+          </button>
+        </div>
+        <p class="py-2 score">Votre score : 0</p>
+      </form>
     </div>
     <script type="module" src="/main.js"></script>
   </body>
